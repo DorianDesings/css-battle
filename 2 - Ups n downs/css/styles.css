@@ -1,0 +1,30 @@
+body {
+  position: relative;
+  background-color: #62306d;
+}
+.pill,
+.pill::before,
+.pill::after {
+  position: absolute;
+  top: 42px;
+  left: 142px;
+  width: 100px;
+  height: 200px;
+  border-radius: 100px;
+  background: linear-gradient(#f7ec7d 50%, #62306d 50%);
+}
+
+.pill::before,
+.pill::after {
+  content: '';
+  top: 0;
+  background: linear-gradient(#62306d 50%, #f7ec7d 50%);
+}
+
+.pill::before {
+  left: -100px;
+}
+
+.pill::after {
+  left: 100px;
+}
