@@ -1,0 +1,28 @@
+body {
+  position: relative;
+  background-color: #0b2429;
+}
+.leaf,
+.leaf::after {
+  --size: 120px;
+  position: absolute;
+  top: 142px;
+  left: 72px;
+  width: var(--size);
+  height: var(--size);
+  background-color: #f3ac3c;
+}
+
+.leaf {
+  border-radius: var(--size) 0 var(--size) var(--size);
+  box-shadow: 60px -60px #998235;
+}
+.leaf::after {
+  --position: 120px;
+  content: '';
+  position: absolute;
+  top: calc(var(--position) * -1);
+  left: var(--position);
+  border-radius: 50%;
+  z-index: -1;
+}
