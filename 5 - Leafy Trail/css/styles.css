@@ -1,0 +1,14 @@
+body {
+  position: relative;
+  background-color: #0b2429;
+}
+.leaf {
+  position: absolute;
+  top: 67px;
+  left: 167px;
+  width: 150px;
+  height: 150px;
+  border-radius: 100px 0 100px 0;
+  background: #f3ac3c;
+  box-shadow: -50px 0 #998235, -100px 0 #1a4341;
+}
